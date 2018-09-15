@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Submeter um formulário</title>
+</head>
+<body>
+    <div id="info"></div>
+    <form action="verificar.php" method="post" id="meuForm">
+        <div><input type="text" name="txt_nome" placeholder="Nome" required></div>
+        <div><input type="email" name="txt_email" placeholder="E-mail" required></div>
+        <textarea name="txt_mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+        <div><button onclick="SubmeterFormulario('meuForm');">Enviar</button></div>
+    </form>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+</body>
+</html>
